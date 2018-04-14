@@ -1,0 +1,4 @@
+query/t.jpg
+query/e.jpg
+query/n.jpg
+query/l.jpg

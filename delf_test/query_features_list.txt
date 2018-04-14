@@ -1,0 +1,4 @@
+data/query_features/t.delf
+data/query_features/e.delf
+data/query_features/n.delf
+data/query_features/l.delf

@@ -1,0 +1,14 @@
+data/train_features/t1.delf
+data/train_features/t2.delf
+data/train_features/t3.delf
+data/train_features/t4.delf
+data/train_features/t5.delf
+data/train_features/e1.delf
+data/train_features/e2.delf
+data/train_features/e3.delf
+data/train_features/n1.delf
+data/train_features/n2.delf
+data/train_features/n3.delf
+data/train_features/l1.delf
+data/train_features/l2.delf
+data/train_features/l3.delf
