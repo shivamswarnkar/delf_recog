@@ -83,7 +83,11 @@ def main(unused_argv):
     filename_queue = tf.train.string_input_producer(image_paths, shuffle=False)
     reader = tf.WholeFileReader()
     _, value = reader.read(filename_queue)
-    image_tf = tf.image.decode_jpeg(value, channels=3)
+
+    try:
+      image_tf = tf.image.decode_jpeg(value, channels=3)
+    except:
+      image_tf = None
 
     with tf.Session() as sess:
       # Initialize variables.
@@ -126,6 +130,8 @@ def main(unused_argv):
 
         # # Get next image.
         im = sess.run(image_tf)
+        if(im==None):
+          continue
 
         # If descriptor already exists, skip its computation.
         out_desc_filename = os.path.splitext(os.path.basename(
